@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Helvetica', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f1f1f;
+  background-color: #ffffff;
+}
