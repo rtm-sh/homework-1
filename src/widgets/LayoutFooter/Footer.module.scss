@@ -1,10 +1,11 @@
 .footer {
-    background-color: #eeeeee;
+    background-color: var(--footer-bg);
     padding: 20px;
-    border-top: 1px solid #c5c5c5;
+    border-top: 1px solid var(--border-color);
 
     &__copyright {
         margin: 0;
         text-align: center;
+        color: var(--text-color);
     }
 }

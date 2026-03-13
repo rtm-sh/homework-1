@@ -1,0 +1,14 @@
+.theme-switcher-btn {
+    max-width: 200px;
+    width: 100%;
+    background-color: var(--btn-bg);
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: var(--btn-hover);
+    }
+
+    &:active {
+        background-color: var(--btn-bg);
+    }
+}

@@ -5,6 +5,7 @@
         font-size: 30px;
         text-align: center;
         margin: 0 0 20px;
+        color: var(--text-color)
     }
 
     &__list {
@@ -13,7 +14,13 @@
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+    }
+
+    &__divider {
+        border: none;
+        height: 1px;
+        background-color: var(--border-color);
+        margin: 15px 0;
     }
 
     &__item {
@@ -25,5 +32,6 @@
         font-size: 18px;
         text-align: center;
         padding: 40px;
+        color: var(--text-color);
     }
 }
