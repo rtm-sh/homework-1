@@ -1,23 +1,25 @@
 .postCard {
     padding: 10px 15px;
     border-radius: 10px;
-    border: 1px solid #c5c5c5;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     transform: scale(1);
 
     &__title {
         margin: 0 0 10px;
+        color: var(--text-color);
     }
 
     &__desc {
         margin: 0;
         opacity: 0.75;
+        color: var(--text-color);
     }
 
     &:hover {
         transform: scale(1.01);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 8px var(--shadow-color-hover);
     }
 }

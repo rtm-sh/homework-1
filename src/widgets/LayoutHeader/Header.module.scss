@@ -1,12 +1,6 @@
 .header {
-    background-color: #eeeeee;
-    padding: 20px;
-    border-bottom: 1px solid #c5c5c5;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -14,11 +8,35 @@
     z-index: 1000;
 
     // Эффект матового стекла
-    background: rgba(255, 255, 255, 0.9); // полупрозрачный фон
-    backdrop-filter: blur(5px); // эффект размытия
+    background: rgba(var(--header-bg-r, 255),
+            var(--header-bg-g, 255),
+            var(--header-bg-b, 255),
+            0.9);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px); // поддержка Safari
+
+    &__container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 20px;
+    }
 
     &__title {
         margin: 0;
+        justify-self: start;
+        color: var(--text-color);
+    }
+
+    &__btn-project {
+        justify-self: center;
+    }
+
+    &__theme-switcher-btn {
+        justify-self: end;
     }
 }
